@@ -92,7 +92,7 @@ void loop() {
     if (place4) { placeBreath(10, 64); }  // 4th bottom right g|h'place setting' yellow LEDs 10-14, if active draw breathe over confetti
 
     FastLED.show(); // send the 'leds' array out to the actual LED strip
-    FastLED.delay(10); // delay in between reads for stability supposedly
+    FastLED.delay(20); // delay in between reads for stability supposedly
 
     EVERY_N_MILLISECONDS( 20 ) { gHue++; } // slowly cycle the "base color" through the rainbow
 
